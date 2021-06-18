@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Comic_Detail"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_comic__detail">
+
+    <LinearLayout
+        android:layout_marginTop="200px"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/comic_image"
+            android:layout_width="800px"
+            android:layout_height="1000px"
+            app:srcCompat="@mipmap/ic_comic1"
+            tools:layout_editor_absoluteY="69dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/comic_title"
+            android:layout_marginTop="70px"
+            android:layout_height="wrap_content"
+            android:text="Fairytail Vol.62"
+            android:textSize="80px"
+            android:textStyle="bold"
+            android:textColor="#0B044C"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/comic_description"
+                android:layout_height="wrap_content"
+                android:text="Fairy Tail (stylized as FAIRY TAIL) is a Japanese manga series written and illustrated by Hiro Mashima."
+                android:textColor="#0B044C"
+                android:textSize="50px"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textSize="80px"
+        android:textStyle="bold"
+        android:textColor="#0B044C"
+        android:layout_margin="20px"></TextView>
+
+    <EditText
+        android:id="@+id/editText_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Input Quantity Here"
+        android:inputType="number" />
+
+    <Button
+        android:layout_marginTop="50px"
+        android:background="#0B044C"
+        android:textColor="@android:color/white"
+        android:id="@+id/button_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buy" />
+
+
+</LinearLayout>
